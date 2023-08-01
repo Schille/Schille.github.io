@@ -1,14 +1,41 @@
 #about {
   width: 90%;
   margin: 0 auto;
-  max-width: 960px;
   @media only screen and (min-width: $cut) {
-    width: 80%;
+    width: 90%;
   }
 }
 
 .tech {
   margin: 10px;
+  flex: 1 1 0px;
+  h2 {
+    height: 90px;
+  }
+  p {
+    height: 180px;
+    @media only screen and (min-width: $cut) {
+      height: 180px;
+      font-size: 20px;
+    }
+    @media only screen and (min-width: 1000px) {
+      height: 130px;
+      font-size: 20px;
+    }
+  }
+  i {
+    font-size: 80px;
+    padding: 2px;
+
+    @media only screen and (min-width: $cut) {
+      font-size: 50px;
+      padding: 5px;
+    }
+    @media only screen and (min-width: 1200px) {
+      font-size: 70px;
+      padding: 10px;
+    }
+  }
 }
 
 .user {
@@ -19,9 +46,9 @@
   flex-wrap: wrap;
   justify-content: space-between;
   p {
-    font-size: 16px;
+    font-size: 18px;
   }
-  @media only screen and (min-width: $cut) {
+  @media only screen and (min-width: 750px) {
     flex-wrap: nowrap;
     font-size: 75px;
   }
@@ -30,4 +57,12 @@
 .user-details {
   text-align: center;
   margin: 5px auto;
+  font-size: 1.5rem;
+  
+  img {
+    max-width: 300px;
+    clip-path: circle();
+    float: right;
+    margin: 0.5em;
+  }
 }

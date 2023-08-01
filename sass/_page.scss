@@ -1,0 +1,32 @@
+.container {
+    display: flex;
+    justify-content: center;
+
+    .content-page {
+        width: 400px; 
+        padding: 10px;
+       
+        @media only screen and (min-width:$cut) {
+            width: 800px; 
+            padding: 10px;
+        }
+
+        p, ul , ol {
+            font-size: 1.3rem;
+        }
+    }
+}
+
+.slick-prev:before, .slick-next:before{
+ color: $main !important;
+}
+
+/* the slides */
+.slick-slide {
+    margin: 0 20px;
+}
+
+/* the parent */
+.slick-list {
+    margin: 0 -20px;
+}

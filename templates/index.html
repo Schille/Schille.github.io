@@ -1,29 +1,19 @@
+{% extends "base.html" %}
 {% import "macros.html" as macros %}
 {% import "content.html" as content %}
 
-<!DOCTYPE html>
-<html lang="en">
 
-  {{ macros::head() }}
+{% block content %}
 
-  <body>
+{{ macros::header() }}
 
-      {{ macros::header() }}
+<section id="about">
+  {{ content::about() }}
+</section>
 
-      <section id="about">
-        {{ content::about() }}
-      </section>
-
-      <section id="projects">
-        {{ content::projects() }}
-      </section>
-
-      {% block content %}
-      <p></p>
-      {% endblock content %}
+<section id="projects">
+  {{ content::projects() }}
+</section>
+{% endblock content %}
 
 
-      {{ macros::footer() }}
-      {{ macros::google_analytics() }}
-
-  </body>

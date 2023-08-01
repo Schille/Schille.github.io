@@ -1,4 +1,4 @@
-#particles-js {
+.particles-js {
   background: $main;
   display: flex;
   vertical-align: bottom;
@@ -7,39 +7,76 @@
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed;
+
   .particles-js-canvas-el {
-    width:100% !important;
-    height:100vh !important;
+    width: 100% !important;
+    height: 100vh !important;
+  }
+}
+
+.particles-sm-js {
+  background: $main;
+  display: flex;
+  vertical-align: bottom;
+  width: 100%;
+  min-height: 20vh;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+
+  .particles-js-canvas-el {
+    width: 100% !important;
+    height: 20vh !important;
+  }
+
+  .back {
+    
+    left: 5%;
+    top: 8%;
+    position: absolute;
+    color: #FFF;
+    a {
+      text-decoration: none;
+      color: #FFF;
+    }
+
+    @media screen and (max-width:$cut) {
+      display: none;
+    }
   }
 }
 
 .header {
   z-index: 1;
   text-align: center;
-  color:#FFF;
+  color: #FFF;
   position: absolute;
   top: 50%;
   left: 50%;
   margin: 0 auto;
   -webkit-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
+
   .site-title {
     font-size: 50px;
     display: block;
     line-height: 1;
     color: #FFF;
-    @media only screen and (min-width:$cut){
+
+    @media only screen and (min-width:$cut) {
       margin: 0;
       font-size: 100px;
     }
   }
+
   .site-description {
     font-size: 20px;
     display: block;
     line-height: 1;
     color: #FFF;
     margin-top: 10px;
-    @media only screen and (min-width:$cut){
+
+    @media only screen and (min-width:$cut) {
       font-size: 40px;
     }
   }
@@ -47,12 +84,14 @@
 
 .header-links {
   margin: 10px;
+
   .link {
     color: #FFF;
     text-decoration: none;
     font-size: 15px;
     margin: 10px;
-    @media only screen and (min-width:$cut){
+
+    @media only screen and (min-width:$cut) {
       font-size: 20px;
     }
   }
@@ -62,6 +101,7 @@
   display: flex;
   justify-content: center;
   text-align: center;
+
   .icon {
     text-align: center;
     color: #FFF;
@@ -73,14 +113,17 @@
     border-radius: 50%;
     border: 2px solid #FFF;
     transition: all .7s;
+
     &:hover {
       color: $main;
       background: #FFF;
     }
+
     &:active {
       color: $main;
       background: #FFF;
     }
+
     @media only screen and (min-width:$cut) {
       width: 35px;
       height: 35px;
@@ -99,24 +142,63 @@
   text-align: center;
   font-size: 30px;
   cursor: pointer;
+
   .icon {
-      position: absolute;
-      -webkit-transform-style: preserve-3d;
-      transform-style: preserve-3d;
-      top: 50%;
-      left: 50%;
-      -webkit-transform: translate(-50%, -50%);
-      transform: translate(-50%, -50%);
-      width: 100px;
-      height: 100px;
-      fill: #fff;
-      -webkit-animation: pulse 1.3s infinite;
-      animation: pulse 1.3s infinite;
-      &:hover {
-        color: $sec;
-      }
-      &:active {
-        color: $sec;
-      }
+    position: absolute;
+    -webkit-transform-style: preserve-3d;
+    transform-style: preserve-3d;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    width: 100px;
+    height: 100px;
+    fill: #fff;
+    -webkit-animation: pulse 1.3s infinite;
+    animation: pulse 1.3s infinite;
+
+    &:hover {
+      color: $sec;
+    }
+
+    &:active {
+      color: $sec;
+    }
+  }
+}
+
+.header-sm {
+  z-index: 1;
+  text-align: center;
+  color: #FFF;
+  position: absolute;
+  top: 6%;
+  left: 50%;
+  margin: 0 auto;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+
+  .site-title {
+    font-size: 30px;
+    display: block;
+    line-height: 1;
+    color: #FFF;
+
+    @media only screen and (min-width:$cut) {
+      margin: 0;
+      font-size: 4rem;
+    }
+  }
+
+  .site-description {
+    font-size: 20px;
+    display: block;
+    line-height: 1;
+    color: #FFF;
+    margin-top: 10px;
+
+    @media only screen and (min-width:$cut) {
+      font-size: 40px;
+    }
   }
 }

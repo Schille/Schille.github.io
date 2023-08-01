@@ -18,7 +18,7 @@ document.addEventListener("DOMContentLoaded", function () {
       "shape": {
         "type": "polygon",
         "stroke": {
-          "width": 0,
+          "width": 1,
           "color": "#000000"
         },
         "polygon": {
@@ -77,7 +77,7 @@ document.addEventListener("DOMContentLoaded", function () {
       "detect_on": "canvas",
       "events": {
         "onhover": {
-          "enable": false,
+          "enable": true,
           "mode": "grab"
         },
         "onclick": {

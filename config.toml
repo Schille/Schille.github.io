@@ -1,5 +1,5 @@
 # The URL the site will be built for
-base_url = "https://particle.vercel.app"
+base_url = "http://127.0.0.1:1111"
 
 title = "A blog about lorem ipsum dolor sit amet"
 description = "A blog about lorem ipsum dolor sit amet"
@@ -19,13 +19,11 @@ default_language = "en"
 
 [extra]
 # User settings
-username = "Anon Developer"
-user_description = "Bicycle rights irony actually neutra typewriter lyft. Man bun taxidermy put a bird on it, umami yr ramps pop-up ugh bushwick chia lo-fi. Occupy bitters pour-over snackwave you probably haven't heard of them small batch. Cornhole mustache man bun letterpress echo park VHS."
-user_title = "Software Developer"
-email = "anon@anon.com"
-twitter_username = "lorem_ipsum"
-github_username =  "lorem_ipsum"
-gplus_username =  "lorem_ipsum"
-
+username = "Michael Schilonka"
+user_description = ""
+user_title = ""
+email = "michael@schilonka.de"
+twitter_username = "Schille90"
+github_username =  "Schille"
 # Google-analytics
 google_analytics.id = ""

@@ -1,33 +1,50 @@
 {% macro about() %}
- <div class="user-details">
-  <h1> My Expertise </h1>
-  <p> {{ config.extra.user_description }} </p>
+<div class="user-details">
+  <h1> About Michael </h1>
+  <img src="{{ config.base_url ~ "/img/avatar.jpg" }}" alt="Michael Schilonka">
+  <p> Michael is a highly respected thought leader in the field of cloud native software development, known for his
+    exceptional skills and unwavering passion for his work. With a deep understanding of the intricacies of modern
+    software development practices, Michael is recognized for his exceptional leadership skills. He has a remarkable
+    ability to inspire and motivate his teams, fostering an environment of collaboration, innovation, psychological
+    safety, and continuous improvement. His emphasis on excellence and attention to detail has consistently resulted in
+    the delivery of top-notch software products and services. </p>
 </div>
-  <div class="user">
-    <div class="tech">
-      <h2>Design</h2>
-      <i class="devicon-html5-plain-wordmark"></i>
-      <i class="devicon-bootstrap-plain-wordmark colored"></i>
-      <i class="devicon-sass-original colored"></i>
-      <p>Mumblecore hexagon kombucha, pitchfork four loko raclette intelligentsia master cleanse.
-        Vinyl XOXO lumbersexual</p>
-    </div>
-    <div class="tech">
-      <h2>Code</h2>
-      <i class="devicon-javascript-plain colored"></i>
-      <i class="devicon-react-original-wordmark colored"></i>
-      <i class="devicon-nodejs-plain-wordmark"></i>
-      <p>Mumblecore hexagon kombucha, pitchfork four loko raclette intelligentsia master cleanse.
-        Vinyl XOXO lumbersexual</p>
-    </div>
-    <div class="tech">
-      <h2>Tools</h2>
-      <i class="devicon-git-plain"></i>
-      <i class="devicon-gulp-plain colored"></i>
-      <i class="devicon-atom-original-wordmark"></i>
-      <p>Mumblecore hexagon kombucha, pitchfork four loko raclette intelligentsia master cleanse.
-        Vinyl XOXO lumbersexual</p>
-    </div>
+<br>
+<hr>
+<div class="user-details">
+  <h2> Tech Skills </h2>
+</div>
+<div class="user">
+  <div class="tech">
+    <h3> Software </br> Engineering </h3>
+    <p>I have a variety of complementary <b>coding technologies</b> and <b>frameworks</b> under my belt with a strong affinity for backend and database applications.</p>
+    <i class="devicon-html5-plain-wordmark"></i>
+    <i class="devicon-python-plain-wordmark"></i>
+    <i class="devicon-rust-plain"></i></br>
+    <i class="devicon-postgresql-plain-wordmark"></i>
+    <i class="devicon-couchdb-plain-wordmark"></i>
+    <i class="devicon-graphql-plain-wordmark"></i>
+    
+  </div>
+  <div class="tech">
+    <h3> Cloud Computing </br> & DevOps </h3>
+    <p>Automatically building byte-perfect software container images in <b>CI/CD</b> and rolling them out in <b>Kubernetes</b> using GitOps: that is my passion.</p>
+    <i class="devicon-linux-plain"></i>
+    <i class="devicon-docker-plain-wordmark"></i>
+    <i class="devicon-kubernetes-plain-wordmark"></i></br>
+    <i class="devicon-azure-plain-wordmark"></i>
+    <i class="devicon-googlecloud-plain-wordmark"></i>
+    <i class="devicon-amazonwebservices-plain-wordmark"></i>
+    
+  </div>
+  <div class="tech">
+    <h3> Project </br> Management </h3>
+    <p>I successfully managed software projects with high budgets, <b>heterogeneous</b> teams, technical <b>challenges</b> and many <b>stakeholders</b>.</p>
+    <i class="devicon-git-plain-wordmark"></i>
+    <i class="devicon-github-original-wordmark"></i>
+    <i class="devicon-jira-plain-wordmark"></i>
+    
+  </div>
 </div>
 {% endmacro about %}
 
@@ -37,15 +54,20 @@
 </div>
 <div class="user-projects">
   <div class="images-right">
-    <img alt="mountains" src="{{ config.base_url ~ "/img/mountains.jpg" }}" />
+    <img alt="A converted motorhome" src="{{ config.base_url ~ "/img/bob1.jpg" }}" />
   </div>
   <div class="contents">
-    <h3> Project Title </h3>
+    <h3> [Personal] A Campervan Conversion </h3>
     <ul>
-      <li> Featured Skills</li>
+      <li> Hardware, concept working </li>
+      <li> Electrical engineering </li>
+      <li> Crafting </li>
+      <li> Material mix </li>
     </ul>
-    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-    <a class="project-link" href="#">Check it out</a>
+    <p>In 2021/22, I converted a panel van into a motorhome. This ambitious project combined a wide range 
+      of hard skills and passion.
+    </p>
+    <a class="project-link" href="/projects/bob-campervan">Read the story</a>
   </div>
 </div>
 <div class="user-projects">
@@ -57,9 +79,10 @@
     <ul>
       <li> Featured Skills</li>
     </ul>
-    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore
+      magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+      consequat.</p>
     <a class="project-link" href="#">Check it out</a>
   </div>
 </div>
 {% endmacro projects %}
-
