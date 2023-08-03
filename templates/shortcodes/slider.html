@@ -1,20 +1,20 @@
 <div class="image-slider">
     {% for dimage in images %}
-    {% set image = resize_image(path=dimage, op="fit", width=width, height=height) %}
+    {% set image = resize_image(path=dimage, op="fit_height", height=height) %}
     <div><img src="{{ image.url }}" /></div>
     {% endfor %}
 </div>
 
 <script type="text/javascript">
     window.addEventListener("DOMContentLoaded", (event) => {
-        $('.image-slider').slick({
+        $('.image-slider').not('.slick-initialized').slick({
             dots: true,
             infinite: false,
             arrows: true,
             slidesToShow: 1,
             centerMode: true,
             variableWidth: true,
-            adaptiveHeight: true
+            adaptiveHeight: false
         });
     });
 

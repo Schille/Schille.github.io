@@ -8,25 +8,62 @@
        
         @media only screen and (min-width:$cut) {
             width: 800px; 
-            padding: 10px;
+            margin: 10px;
         }
 
         p, ul , ol {
             font-size: 1.3rem;
         }
     }
+
+    img {
+        max-width: 100%;
+        padding: 10px;
+    }
+    .float-left {
+        float: none;
+        padding: 50px;
+        @media only screen and (min-width:$cut) {
+            float: left;
+        }
+    }
+    .float-right {
+        float: none;
+        padding: 50px;
+        @media only screen and (min-width:$cut) {
+            float: right;
+        }
+    }
 }
 
 .slick-prev:before, .slick-next:before{
  color: $main !important;
+ font-family: 'slick' !important;
+ font-size: 40px !important;
+ line-height: 1 !important;
+
+
+ -webkit-font-smoothing: antialiased;
+ -moz-osx-font-smoothing: grayscale;
 }
 
-/* the slides */
+.slick-next {
+    right: -60px !important;
+}
+
+.slick-prev {
+    left: -60px !important;
+}
 .slick-slide {
-    margin: 0 20px;
+    margin: 0 10px;
+    height: 400px !important;
 }
 
-/* the parent */
 .slick-list {
-    margin: 0 -20px;
+    margin: 0 -10px !important;
+}
+
+.slick-track
+{
+    display: flex !important;
 }

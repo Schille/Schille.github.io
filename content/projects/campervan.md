@@ -6,14 +6,14 @@ slug = "bob-campervan"
 # A Campervan Conversion Project
 
 ## Intro
-There is an already long-lasting trend to convert vans (or panel vans) into mobile homes ("RVs"). 
-At first, I thought this is a relatively new thing that got popular with YouTube, but once I talked 
+There is an already long-lasting trend to convert vans (or panel vans) into mobile homes (or recreational vehicles, "RVs"). 
+At first, I thought this is a relatively new thing that got popular with YouTube recently, but once I talked 
 to other people I found that this runs for decades already.  
 I had this dream for at least 13 years: traveling freely with a motorhome throughout the world, 
 exploring places that I could otherwise never reach and sleeping wherever I like. 
 
 Well, looking at the market of new RVs, prices were beyond me. Yet, not only was the cost factor overwhelming but also the shipping times of over a year kept me from moving on with that subject. In 2020, the second-hand 
-market for RVs was blown out, too. And then there was Covid-19. With the social distancing and all other events vanishing, 
+market for motorhomes was blown out, too. And then there was Covid-19. With the social distancing and all other events vanishing, 
 I decided (together with my wife, though) to buy a used panel van and convert it into our very own, individually crafted, customized to our preferences, camper van.
 
 ## The Foundation - a Used Panel Van
@@ -122,13 +122,13 @@ To change the type of the German car registration (set to a motorhome) one needs
 
 Together with my wife, I built all of that. The foundation was created from an alloy frameset 
 (I call it the skeleton) that is tightly connected to the walls and the floor of the RV. 
-We mounted plywood to the frame to make up the furniture including drawers, shelfs and other 
+We mounted plywood to the frame to make up the furniture including drawers, shelves and other 
 storage facilities. We installed the sink, the water system, the cooker and everything 
 else onto that frame. The system is extendable and yet still customizable.  
 After finishing these tasks, I went to an authorized reviewer who eventually created a document that confirms that Bob is a class B (max. 3.5 metric tons) motorhome now. 
-Why is that interesting? - It is much cheaper than any regular car with regards to tax and insurance tuitions in germany. With a driving-ready weight of about 2.9 tons (i.e. full diesel and water tank, the driver), Bob can carry another 600 Kg of additional load for any kind of amusement and other passengers.
+Why is that interesting? - It is much cheaper than any regular car in terms of taxes and insurance fees in Germany. With a driving-ready weight of about 2.9 tons (i.e. full diesel and water tank, the driver), Bob can carry another 600 Kg of additional load for any kind of amusement and other passengers.
 
-{{ slider(images=["img/bob/bob14.jpg", "img/bob/bob13.jpg", "img/bob/bob15.jpg", "img/bob/bob16.jpg"], width=800, height=400) }}
+{{ slider(images=["img/bob/bob13.jpg", "img/bob/bob14.jpg", "img/bob/bob15.jpg", "img/bob/bob16.jpg"], height=400) }}
 
 ## Testing the New Home
 From time to time, I took a break from work to test the constellation - sort of an iterative implementation model that I practice in my professional life, too. That made sense for
@@ -139,15 +139,40 @@ at least three reasons:
 
 {{ slider(images=["img/bob/bob17.jpg", "img/bob/bob18.jpg", "img/bob/bob19.jpg"], width=800, height=400) }}
 
-With each iteration, I became more happy about the result. It feels like everything is where it belongs to. Maybe I am just used to it. The limited space is filled very thoroughly to make use of every inch in the RV.
+With each iteration, I became more happy about the result. It feels like everything is where it belongs, but maybe I am now just used to it. The limited space is filled very thoroughly to make use of every inch in the RV.
 
-## Peek into the Details
+## A Peek into the Details
 
 ### The Kitchen
+Bob's kitchen has everything you need for tasty meals. The cooktop is located near the large sliding door to allow steam and smog to escape. The sink can only be used if the bed is not slid out.
+
+{{ resize_image(path="img/bob/bob16_kitchen1.jpg", width=800, height=550, op="fill") }}
+
+**1a:** Cooker Control    
+**1b:** Cooktop  
+**2:** Foldable sink (covert)   
+**3:** Fridge with freezer  
+**4:** Slide-out trash bin  
+**5:** Multiple drawers of different sizes   
+**6:** Foldable countertop extension  
+
 
 #### Webasto Diesel Cooker
+This [Webasto Diesel Cooker](https://www.webasto-comfort.com/int/product-overview/product/show/diesel-cooker-x100/) is one of my highlights in the van.
+
+{{ resize_image(path="img/bob/webasto_cooker.jpg", width=800, height=550, op="fill") }}
+
+It is connected to the diesel tank of the van, thus no need for additional onboard gas to generate heat for
+cooking. It is not as fast as a gas-based cooker, but it is still practical, easy to clean, and looks fantastic. It is controlled with a little panel that provides an on/off button, a button to activate the high-elevation mode and a temperature dial.   
+One drawback is that the lowest temperature position is already very hot. That makes it a bit difficult to 
+cook meat thoroughly (or anything that requires low heat for some time). However, there are two cooking fields (which cannot be controlled separately) and the second field (two flames) is always colder than the first (three flames).  
+An indicator in the middle lights up when the surface is hot, but once it turns off the surface can still be very hot. I assume it is purely time-controlled and does not measure the surface temperature. The whole unit
+is actively cooled by a little fan operating inside.
+
+{{ resize_image(path="img/bob/webasto_cooker1.jpg", width=800, height=450, op="fill") }}
 
 #### Webasto Fridge (Isotherm)
+I decided to buy a [compressor fridge from Webasto](https://www.webasto-comfort.com/en-uk/comfort-solutions/recreational-vehicle-comfort/fridges/). It provides a fridge and an integrated freezer with very low energy consumption. The noise level is very low, too. The fridge has proven itself in the endurance test.
 
 ### The Seating Area
 
