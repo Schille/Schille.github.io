@@ -1,9 +1,6 @@
 # The URL the site will be built for
 base_url = "http://127.0.0.1:1111"
 
-title = "A blog about lorem ipsum dolor sit amet"
-description = "A blog about lorem ipsum dolor sit amet"
-
 # Whether to automatically compile all Sass files in the sass directory
 compile_sass = true
 
@@ -16,6 +13,9 @@ build_search_index = false
 
 # The default language; used in feeds.
 default_language = "en"
+
+[markdown]
+external_links_target_blank = true
 
 [extra]
 # User settings

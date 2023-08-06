@@ -2,8 +2,7 @@
 <div class="user-details">
   <h1> About Michael </h1>
   <img src="{{ config.base_url ~ "/img/avatar.jpg" }}" alt="Michael Schilonka">
-  <p> Michael is a highly respected thought leader in the field of cloud native software development, known for his
-    exceptional skills and unwavering passion for his work. With a deep understanding of the intricacies of modern
+  <p> With a deep understanding of the intricacies of modern
     software development practices, Michael is recognized for his exceptional leadership skills. He has a remarkable
     ability to inspire and motivate his teams, fostering an environment of collaboration, innovation, psychological
     safety, and continuous improvement. His emphasis on excellence and attention to detail has consistently resulted in
@@ -27,7 +26,7 @@
     
   </div>
   <div class="tech">
-    <h3> Cloud Computing </br> & DevOps </h3>
+    <h3> Cloud Computing </br> & DevOps & Operations </h3>
     <p>Automatically building byte-perfect software container images in <b>CI/CD</b> and rolling them out in <b>Kubernetes</b> using GitOps: that is my passion.</p>
     <i class="devicon-linux-plain"></i>
     <i class="devicon-docker-plain-wordmark"></i>
@@ -54,15 +53,17 @@
 </div>
 <div class="user-projects">
   <div class="images-right">
-    <img alt="A converted motorhome" src="{{ config.base_url ~ "/img/bob1.jpg" }}" />
+    <img alt="A converted motorhome" src="{{ config.base_url ~ "/img/bob/bob0.jpg" }}" />
   </div>
   <div class="contents">
-    <h3> [Personal] A Campervan Conversion </h3>
+    <h3>A Campervan Conversion</h3>
+    <span class="tag yellow">Personal</span>
+    <span class="tag red">Complex</span>
     <ul>
-      <li> Hardware, concept working </li>
-      <li> Electrical engineering </li>
-      <li> Crafting </li>
-      <li> Material mix </li>
+      <li>Hardware, concept working</li>
+      <li>Electrical engineering</li>
+      <li>Crafting</li>
+      <li>Material mix</li>
     </ul>
     <p>In 2021/22, I converted a panel van into a motorhome. This ambitious project combined a wide range 
       of hard skills and passion.
@@ -72,17 +73,46 @@
 </div>
 <div class="user-projects">
   <div class="images-left">
-    <img alt="mountains" src="{{ config.base_url ~ "/img/skate.jpg" }}" />
+    <img alt="a bodyscanner" src="{{ config.base_url ~ "/img/bodyscanner/bodyscanner1.png" }}" />
   </div>
   <div class="contents-right">
-    <h3> Project Title </h3>
+    <h3>A Body Scanner for Medical Stocking</h3>
+    <span class="tag blue">Professional</span>
+    <span class="tag red">Complex</span>
     <ul>
-      <li> Featured Skills</li>
+      <li>Hardware, design, concept working</li>
+      <li>3D depth data acquisition and processing</li>
+      <li>Touch UI, progressive web app</li>
+      <li>Medical data regulations and privacy enforcement</li>
+      <li>Advanced project & rollout management</li>
     </ul>
-    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore
-      magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-      consequat.</p>
+    <p>In 2019, my team and I completed the development of a body scanner to capture the
+      measurements of patients' lower bodies for customized medical stockings. This project covered almost all disciplines of 
+      technology development.
+    </p>
     <a class="project-link" href="#">Check it out</a>
   </div>
+</div>
+<div class="user-projects">
+  <div class="images-right">
+    {% set sw1 = resize_image(path="/img/shoppingwindow/sw1.jpg", width=800, height=550, op="fill") %}
+    <img alt="A digital shopping window" src="{{ sw1.url }}" />
+  </div>
+  <div class="contents">
+    <h3>A Digital Shopping Window</h3>
+    <span class="tag blue">Professional</span>
+    <span class="tag red">Complex</span>
+    <ul>
+      <li>3D depth data acquisition and processing</li>
+      <li>Body motion detection, gesture control</li>
+      <li>Browser-based 3D content presentation</li>
+      <li>Dynamic Wifi portal pages, app integration</li>
+    </ul>
+    <p>In 2015, I worked with my team to create a gesture-controlled digital shopping window that allows users to explore a fictional 
+      3D world with product placement and combined smartphone checkout.
+    </p>
+    <a class="project-link" href="/projects/bob-campervan">Read more</a>
+  </div>
+
 </div>
 {% endmacro projects %}

@@ -42,7 +42,7 @@ Sure, massive material for the drive takes up more of the total weight. The tota
 issue on its own later anyway. That's why I looked for a rather lightweight panel van.
 
 {{ resize_image(path="img/bob/bob1.jpg", width=300, height=200, op="fill", float="right") }} 
-I found this affordable beauty and bought it from a penny market trader. The Volkswagen Crafter 
+I found this affordable beauty and bought it from a jumble sale trader. The Volkswagen Crafter 
 (shipped in 2017) ticked already many boxes and is almost identical (except for the front and the motor) to 
 the Mercedes-Benz Sprinter. 
 We gave the van the name "Bob".
@@ -61,19 +61,22 @@ CAD ("computer-aided design") tool, I was able to create a (well, not very) prec
 Using a 3D paper prototype of the planned layout, I was able to confirm our assumptions and make the necessary tradeoffs. For example, 
 we wanted to sleep on an almost standard-sized (1.40 m x 2 m) bed. That's why we had to plan a slide-out bed construction to sleep parallel to the walls.
 
+{{ resize_image(path="img/bob/bob-paper.jpg", width=800, height=550, op="fill") }} 
+
 Bob is optimized for the following parameters:
 1) Great sleep
 2) Good seating inside, space around the head
 3) A proper kitchen (with sink)
 4) All season, all weather off-grid camping (active heating and enough power capacity)
 5) Storage for utilities (e.g. a bike trailer for toddlers, awning) and weight
-6) Keeping the appearance of a standard panel van (for wild camping)
+6) Keeping the appearance of a standard panel van; for wild camping ;-)
 
 A little less focus was put on:
 1) A proper bath (chemical camping toilet inside, outside shower)
 2) Warm water (to be boiled on the cooker)
 3) In-car entertainment (no TV or radio)
 4) Costs (I did not try to build the cheapest possible construction)
+5) Time to build
 
 ## Conversion Basics
 The conversion basics include:
@@ -93,7 +96,7 @@ To make the inside of the motorhome more pleasant, we covered all wooden panels 
 ## Electricity and Wiring
 To get a grasp on the power requirements, I created a spreadsheet with all electric devices and added my assumption about our 
 power consumption and standing times. I planned to add a so-called "booster" that charges our battery during the drive from the car's generator and recharges via solar panels.  
-To be as independent from external power sources as possible I bought a massive 200 Ah lithium battery. The following appliances (all on 12 V DC) are installed to the motorhome:
+To be as independent from external power sources as possible I bought a massive 200 Ah lithium battery. The following appliances (all on 12 V DC) are installed in the motorhome:
 - a fridge (with freezer)
 - a diesel heater
 - a diesel cooker (Webasto; this cooker is killing it)
@@ -149,7 +152,7 @@ Bob's kitchen has everything you need for tasty meals. The cooktop is located ne
 {{ resize_image(path="img/bob/bob16_kitchen1.jpg", width=800, height=550, op="fill") }}
 
 **1a:** Cooker Control    
-**1b:** Cooktop  
+**1b:** Cooktop (hob)  
 **2:** Foldable sink (covert)   
 **3:** Fridge with freezer  
 **4:** Slide-out trash bin  
@@ -165,7 +168,8 @@ This [Webasto Diesel Cooker](https://www.webasto-comfort.com/int/product-overvie
 It is connected to the diesel tank of the van, thus no need for additional onboard gas to generate heat for
 cooking. It is not as fast as a gas-based cooker, but it is still practical, easy to clean, and looks fantastic. It is controlled with a little panel that provides an on/off button, a button to activate the high-elevation mode and a temperature dial.   
 One drawback is that the lowest temperature position is already very hot. That makes it a bit difficult to 
-cook meat thoroughly (or anything that requires low heat for some time). However, there are two cooking fields (which cannot be controlled separately) and the second field (two flames) is always colder than the first (three flames).  
+cook meat thoroughly (or anything that requires low heat for some time). However, there are two cooking fields (which cannot be controlled separately) and the second field (two flames) is always less hotter than the first (three flames).  
+
 An indicator in the middle lights up when the surface is hot, but once it turns off the surface can still be very hot. I assume it is purely time-controlled and does not measure the surface temperature. The whole unit
 is actively cooled by a little fan operating inside.
 
@@ -174,14 +178,25 @@ is actively cooled by a little fan operating inside.
 #### Webasto Fridge (Isotherm)
 I decided to buy a [compressor fridge from Webasto](https://www.webasto-comfort.com/en-uk/comfort-solutions/recreational-vehicle-comfort/fridges/). It provides a fridge and an integrated freezer with very low energy consumption. The noise level is very low, too. The fridge has proven itself in the endurance test.
 
+{{ resize_image(path="img/bob/bob_fridge.jpg", width=800, height=700, op="fill") }}
+
 ### The Seating Area
 
 ### The Slide-out Bed
 
 ### Webasto AirTop Heating and Control
+I decided to add the [Webasto Air Top 2000](https://www.webasto-comfort.com/en-uk/product-overview/product/show/air-top-2000-stc-3/) as an active heater for the living area to the van.
 
 ### The Roof
+The roof is equipped with a proper roof rack. It's black, flat and looks fantastic.
+I mounted two solar panels (together ~240 Wp) and two 140 liter alloy boxes for additional space.
 
+{{ slider(images=["img/bob/bob_roof1.jpg", "img/bob/bob_roof2.jpg", "img/bob/bob_roof3.jpg", "img/bob/bob_roof4.jpg"], width=800, height=400) }}
 
+### Onboard Water
+I installed two 75-liter water tanks in the trunk. One holds the fresh drining water, the other one
+stores the waste water. They are installed in the car so that the water does not freeze in winter. There is
+a water pump with 3.8 bar pressure which allows convenient water extraction and is fun when showering outdoors.  
+The water reserve is enough for about three days with moderate water usage (normal cooking, cleaning dishes, washing) and even longer with a restrictive water consumption. The sensors constantly report the filling levels.
 
-
+{{ resize_image(path="img/bob/bob_water.jpg", width=800, height=700, op="fill") }}
