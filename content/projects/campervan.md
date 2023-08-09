@@ -80,7 +80,7 @@ A little less focus was put on:
 
 ## Conversion Basics
 The conversion basics include:
-- removing the old inside decoration (shelfs, hooks, etc.)
+- removing the old inside decoration (shelves, hooks, etc.)
 - adding special anti-noise tiles on all wide steel panes (to isolate from external noise, for example, rainfall)
 - cutting two holes in the body for windows (one on the side, one on the roof)
 - adding proper insulation (for cold and sunny days): I decided against Armaflex and for ordinary insulation materials (i.e. XPS, styrofoam and elastic foam)
@@ -147,13 +147,13 @@ With each iteration, I became more happy about the result. It feels like everyth
 ## A Peek into the Details
 
 ### The Kitchen
-Bob's kitchen has everything you need for tasty meals. The cooktop is located near the large sliding door to allow steam and smog to escape. The sink can only be used if the bed is not slid out.
+Bob's kitchen has everything you need for tasty meals. The cooktop is located near the large sliding door to allow steam and smog to escape. The sink can only be used if the bed is not in the sleeping position.
 
 {{ resize_image(path="img/bob/bob16_kitchen1.jpg", width=800, height=550, op="fill") }}
 
 **1a:** Cooker Control    
 **1b:** Cooktop (hob)  
-**2:** Foldable sink (covert)   
+**2:** Foldable sink (closed)   
 **3:** Fridge with freezer  
 **4:** Slide-out trash bin  
 **5:** Multiple drawers of different sizes   
@@ -168,7 +168,7 @@ This [Webasto Diesel Cooker](https://www.webasto-comfort.com/int/product-overvie
 It is connected to the diesel tank of the van, thus no need for additional onboard gas to generate heat for
 cooking. It is not as fast as a gas-based cooker, but it is still practical, easy to clean, and looks fantastic. It is controlled with a little panel that provides an on/off button, a button to activate the high-elevation mode and a temperature dial.   
 One drawback is that the lowest temperature position is already very hot. That makes it a bit difficult to 
-cook meat thoroughly (or anything that requires low heat for some time). However, there are two cooking fields (which cannot be controlled separately) and the second field (two flames) is always less hotter than the first (three flames).  
+cook meat thoroughly (or anything that requires low heat for some time). However, there are two cooking fields (which cannot be controlled separately) and the second field (two flames) is always less hot than the first (three flames).  
 
 An indicator in the middle lights up when the surface is hot, but once it turns off the surface can still be very hot. I assume it is purely time-controlled and does not measure the surface temperature. The whole unit
 is actively cooled by a little fan operating inside.
@@ -189,14 +189,14 @@ I decided to add the [Webasto Air Top 2000](https://www.webasto-comfort.com/en-u
 
 ### The Roof
 The roof is equipped with a proper roof rack. It's black, flat and looks fantastic.
-I mounted two solar panels (together ~240 Wp) and two 140 liter alloy boxes for additional space.
+I mounted two solar panels (~240 Wp combined) and two 140-liter alloy boxes for additional space.
 
 {{ slider(images=["img/bob/bob_roof1.jpg", "img/bob/bob_roof2.jpg", "img/bob/bob_roof3.jpg", "img/bob/bob_roof4.jpg"], width=800, height=400) }}
 
 ### Onboard Water
-I installed two 75-liter water tanks in the trunk. One holds the fresh drining water, the other one
-stores the waste water. They are installed in the car so that the water does not freeze in winter. There is
-a water pump with 3.8 bar pressure which allows convenient water extraction and is fun when showering outdoors.  
-The water reserve is enough for about three days with moderate water usage (normal cooking, cleaning dishes, washing) and even longer with a restrictive water consumption. The sensors constantly report the filling levels.
+I installed two 75-liter water tanks in the trunk. One holds the fresh drinking water, and the other one
+stores the wastewater. They are installed in the car so that the water does not freeze in winter. There is
+a water pump with 2.8 bar pressure which allows convenient water extraction and is fun when showering outdoors.  
+The water reserve is enough for about three days with moderate water usage (normal cooking, cleaning dishes, washing) and even longer with restrictive water consumption. The sensors constantly report the filling levels.
 
 {{ resize_image(path="img/bob/bob_water.jpg", width=800, height=700, op="fill") }}

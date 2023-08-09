@@ -2,11 +2,16 @@
 <div class="user-details">
   <h1> About Michael </h1>
   <img src="{{ config.base_url ~ "/img/avatar.jpg" }}" alt="Michael Schilonka">
-  <p> With a deep understanding of the intricacies of modern
-    software development practices, Michael is recognized for his exceptional leadership skills. He has a remarkable
-    ability to inspire and motivate his teams, fostering an environment of collaboration, innovation, psychological
-    safety, and continuous improvement. His emphasis on excellence and attention to detail has consistently resulted in
-    the delivery of top-notch software products and services. </p>
+  <p>
+    Hello there, I am Michael - a business director and software engineer. I have a passion for technology and for great teamwork. As a tech leader, I strive to inspire and motivate my teams, 
+    fostering an environment of collaboration, innovation, psychological safety, and continuous improvement.
+    I value excellence and attention to detail to consistently deliver top-notch software products and services.
+  </p>
+  <p>
+    You can find me at conferences where I speak about tech and startup topics. In my free time, I love speding time with my family. 
+    I like to craft beer, do all kinds of sports, go camping with friends, play the keyboard and ukulele and develop new ideas. I frequently post my opinions 
+    on <a aria-label="Michael's LinkedIn" target="_blank" href="https://www.linkedin.com/in/michael-schilonka/">LinkedIn</a>.
+  </p>
 </div>
 <br>
 <hr>
@@ -53,6 +58,48 @@
 </div>
 <div class="user-projects">
   <div class="images-right">
+    <img alt="Getdeck" src="{{ config.base_url ~ "/img/getdeck.png" }}" />
+  </div>
+  <div class="contents">
+    <h3> A Virtual Kubernetes for Development and Testing - Getdeck </h3>
+    <span class="tag blue">Professional</span>
+    <span class="tag red">Complex</span>
+    <ul>
+      <li>Kubernetes operator, custom extensions, webhooks</li>
+      <li>Tauri UI, Rust, Python, REST API, Docker, mTLS</li>
+      <li>Open Source Software</li>
+    </ul>
+    <p>Started in 2023, together with my team at Blueshoe, I developed a virtual Kubernetes solutions with a graphical user interface for developers. 
+      This project is open source and available on <a href="https://github.com/Getdeck" target="_blank">GitHub</a>.
+    </p>
+    <a class="project-link" href="https://getdeck.dev" target="_blank">Check it out</a>
+  </div>
+  <hr>
+</div>
+
+<div class="user-projects">
+  <div class="images-left">
+    <img alt="Gefyra" src="{{ config.base_url ~ "/img/gefyra.png" }}"/>
+  </div>
+  <div class="contents-right">
+    <h3> A Developer Tool for Local Containers and Kubernetes - Gefyra </h3>
+    <span class="tag blue">Professional</span>
+    <span class="tag red">Complex</span>
+    <ul>
+      <li>Python, Docker, Wireguard</li>
+      <li>Kubernetes operator, custom extensions, webhooks</li>
+      <li>Open Source Software</li>
+    </ul>
+    <p>Started in 2020, together with my team at Blueshoe, I created a development tool that runs Docker containers locally while having them connected to any 
+      Kubernetes environment. This project is open source and available on <a href="https://github.com/gefyrahq/gefyra" target="_blank">GitHub</a>.
+    </p>
+    <a class="project-link" href="https://gefyra.dev" target="_blank">Check it out</a>
+  </div>
+  <hr>
+</div>
+
+<div class="user-projects">
+  <div class="images-right">
     <img alt="A converted motorhome" src="{{ config.base_url ~ "/img/bob/bob0.jpg" }}" />
   </div>
   <div class="contents">
@@ -70,7 +117,9 @@
     </p>
     <a class="project-link" href="/projects/bob-campervan">Read the story</a>
   </div>
+  <hr>
 </div>
+
 <div class="user-projects">
   <div class="images-left">
     <img alt="a bodyscanner" src="{{ config.base_url ~ "/img/bodyscanner/bodyscanner1.png" }}" />
@@ -92,7 +141,9 @@
     </p>
     <a class="project-link" href="#">Check it out</a>
   </div>
+  <hr>
 </div>
+
 <div class="user-projects">
   <div class="images-right">
     {% set sw1 = resize_image(path="/img/shoppingwindow/sw1.jpg", width=800, height=550, op="fill") %}
@@ -113,6 +164,6 @@
     </p>
     <a class="project-link" href="/projects/bob-campervan">Read more</a>
   </div>
-
+  <hr>
 </div>
 {% endmacro projects %}

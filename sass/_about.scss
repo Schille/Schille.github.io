@@ -60,9 +60,13 @@
   font-size: 1.5rem;
   
   img {
+    float: none;
     max-width: 300px;
     clip-path: circle();
-    float: right;
-    margin: 0.5em;
+    @media only screen and (min-width: $cut) {
+      
+      float: right;
+      margin: 0.5em;
+    }
   }
 }
