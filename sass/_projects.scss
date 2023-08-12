@@ -10,6 +10,21 @@
   }
 }
 
+// .heading {
+//   background-color: $sec-lesser;
+//   background-image: linear-gradient(to right, white 20vw, $sec-lesser 40vw, white 60vw);
+//   background-size: 80vw 100%;
+//   background-position: 50% 100%;
+//   background-repeat: no-repeat;
+//   width: 80vw;
+//   position: relative; 
+//   left: 50%;
+//   right: 50%;
+//   margin-left: -40vw;
+//   margin-right: -40vw;
+//   height: 100px;
+// }
+
 .user-projects {
   padding-top: 10px;
   margin: 5px auto;
@@ -124,10 +139,19 @@
 .yellow {
     background-color: $yellow;
 }
+
 .red {
   background-color: $red;
 }
 
 .blue {
   background-color: $blue;
+}
+
+.blue {
+  background-color: $blue;
+}
+
+.green {
+  background-color: $green;
 }

@@ -1,11 +1,11 @@
 {% macro about() %}
 <div class="user-details">
   <h1> About Michael </h1>
-  <img src="{{ config.base_url ~ "/img/avatar.jpg" }}" alt="Michael Schilonka">
+  <img class="avatar" src="{{ config.base_url ~ "/img/avatar.jpg" }}" alt="Michael Schilonka">
   <p>
     Hello there, I am Michael - a business director and software engineer. I have a passion for technology and for great teamwork. As a tech leader, I strive to inspire and motivate my teams, 
     fostering an environment of collaboration, innovation, psychological safety, and continuous improvement.
-    I value excellence and attention to detail to consistently deliver top-notch software products and services.
+    I value excellence and attention to detail in order to consistently deliver top-notch software products and services.
   </p>
   <p>
     You can find me at conferences where I speak about tech and startup topics. In my free time, I love speding time with my family. 
@@ -13,10 +13,11 @@
     on <a aria-label="Michael's LinkedIn" target="_blank" href="https://www.linkedin.com/in/michael-schilonka/">LinkedIn</a>.
   </p>
 </div>
-<br>
 <hr>
 <div class="user-details">
-  <h2> Tech Skills </h2>
+  <div class="heading">
+    <h2> Tech Skills </h2>
+  </div>
 </div>
 <div class="user">
   <div class="tech">
@@ -54,7 +55,9 @@
 
 {% macro projects() %}
 <div class="user-details">
-  <h1> Featured Projects </h1>
+  <div class="heading">
+    <h2> Featured Projects </h2>
+  </div>
 </div>
 <div class="user-projects">
   <div class="images-right">
@@ -69,7 +72,7 @@
       <li>Tauri UI, Rust, Python, REST API, Docker, mTLS</li>
       <li>Open Source Software</li>
     </ul>
-    <p>Started in 2023, together with my team at Blueshoe, I developed a virtual Kubernetes solutions with a graphical user interface for developers. 
+    <p>Since 2023, together with my team at Blueshoe, I develop a virtual Kubernetes solutions with a graphical user interface for developers. 
       This project is open source and available on <a href="https://github.com/Getdeck" target="_blank">GitHub</a>.
     </p>
     <a class="project-link" href="https://getdeck.dev" target="_blank">Check it out</a>
@@ -79,18 +82,19 @@
 
 <div class="user-projects">
   <div class="images-left">
-    <img alt="Gefyra" src="{{ config.base_url ~ "/img/gefyra.png" }}"/>
+    <img alt="Gefyra" src="{{ config.base_url ~ "/img/gefyra.jpg" }}"/>
   </div>
   <div class="contents-right">
     <h3> A Developer Tool for Local Containers and Kubernetes - Gefyra </h3>
     <span class="tag blue">Professional</span>
     <span class="tag red">Complex</span>
     <ul>
-      <li>Python, Docker, Wireguard</li>
+      <li>Python, Docker, Wireguard (VPN)</li>
       <li>Kubernetes operator, custom extensions, webhooks</li>
+      <li>Networking</li>
       <li>Open Source Software</li>
     </ul>
-    <p>Started in 2020, together with my team at Blueshoe, I created a development tool that runs Docker containers locally while having them connected to any 
+    <p>Since 2020, together with my team at Blueshoe, I work on a development tool that runs Docker containers locally while having them connected to any 
       Kubernetes environment. This project is open source and available on <a href="https://github.com/gefyrahq/gefyra" target="_blank">GitHub</a>.
     </p>
     <a class="project-link" href="https://gefyra.dev" target="_blank">Check it out</a>
@@ -107,7 +111,7 @@
     <span class="tag yellow">Personal</span>
     <span class="tag red">Complex</span>
     <ul>
-      <li>Hardware, concept working</li>
+      <li>Hardware, CAD, concept working</li>
       <li>Electrical engineering</li>
       <li>Crafting</li>
       <li>Material mix</li>
@@ -115,7 +119,7 @@
     <p>In 2021/22, I converted a panel van into a motorhome. This ambitious project combined a wide range 
       of hard skills and passion.
     </p>
-    <a class="project-link" href="/projects/bob-campervan">Read the story</a>
+    <a class="project-link" href="/projects/bob-campervan/">Read the story</a>
   </div>
   <hr>
 </div>
@@ -139,17 +143,40 @@
       measurements of patients' lower bodies for customized medical stockings. This project covered almost all disciplines of 
       technology development.
     </p>
-    <a class="project-link" href="#">Check it out</a>
+    <a class="project-link" href="/projects/bodyscanner/">Read the story</a>
   </div>
   <hr>
 </div>
 
 <div class="user-projects">
   <div class="images-right">
+    {% set bottle1 = resize_image(path="/img/bottleglow/bottleglow.jpg", width=800, height=550, op="fill") %}
+    <img alt="Glowing Bottles" src="{{ bottle1.url }}" />
+  </div>
+  <div class="contents">
+    <h3>Glowing Bottles</h3>
+    <span class="tag yellow">Personal</span>
+    <span class="tag green">Easy</span>
+    <ul>
+      <li>Concrete molding</li>
+      <li>Glas cutting, crafting</li>
+      <li>Electric wiring</li>
+      <li>Material mix</li>
+    </ul>
+    <p>In 2020, I started to craft different objects from concrete. These lamps, made from upcycled bottles,
+      are eyecather in every liqueur cabinet and practial.
+    </p>
+    <a class="project-link" href="/projects/bottleglow">See more</a>
+  </div>
+  <hr>
+</div>
+
+<div class="user-projects">
+  <div class="images-left">
     {% set sw1 = resize_image(path="/img/shoppingwindow/sw1.jpg", width=800, height=550, op="fill") %}
     <img alt="A digital shopping window" src="{{ sw1.url }}" />
   </div>
-  <div class="contents">
+  <div class="contents-right">
     <h3>A Digital Shopping Window</h3>
     <span class="tag blue">Professional</span>
     <span class="tag red">Complex</span>
@@ -162,8 +189,8 @@
     <p>In 2015, I worked with my team to create a gesture-controlled digital shopping window that allows users to explore a fictional 
       3D world with product placement and combined smartphone checkout.
     </p>
-    <a class="project-link" href="/projects/bob-campervan">Read more</a>
+    <a class="project-link" href="#">Read more</a>
   </div>
-  <hr>
+
 </div>
 {% endmacro projects %}
