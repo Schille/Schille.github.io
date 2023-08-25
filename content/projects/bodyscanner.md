@@ -69,9 +69,9 @@ were promising and within the specified maximum deviations, so we were given the
 <br/> A 3D avatar of the patient with the relevant circumferences.
 
 ## The Device
-In the development of the device, we collaborated with a professional industrial designer and a manufacturer based in Germany.
+For the development of the device, we collaborated with a professional industrial designer and a manufacturer based in Germany.
 
-We provided the sensor locations, the layout and some minor specifications for the required infrastructure as input (mainly, the wiring, touch monitor, compute unit and connectors). I managed the process to
+We provided the sensor locations, the layout and the specifications for the required infrastructure as input (mainly, the wiring, touch monitor, compute unit and connectors). I managed the process to
 agree on the device's design and checked in regularly with other project goals (i.e. budgets and timeline).
 
 ### The Body
