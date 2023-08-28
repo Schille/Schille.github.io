@@ -90,8 +90,7 @@ runs the body scan. After *five seconds* the scan is done and the patient can dr
 
 After reviewing the scan results (the user can make manual adjustments to the automatically determined values), 
 the medical staff can
-proceed with the product selection and further customization - directly on the device. Finally, the order can be
-placed in the name of the patient directly at the manufacturer.
+proceed with the product selection and further customization - directly on the device. Finally, the order can be placed on behalf of the patient directly at the manufacturer.
 
 {{ resize_image(path="img/bodyscanner/bs_scan.jpg", width=900, height=550, op="fill") }}
 
@@ -100,11 +99,11 @@ There are plenty of smart additional functions on the device, for example, a pat
 The device's UI is realized with [Electron](https://www.electronjs.org/), Web-technologies and Chromium in Kiosk-mode.
 
 ### Data-at-Rest Protection
-The device ensures that all data-at-rest, i.e. the data stored on the device, is protected against theft. 
+The device ensures that all data-at-rest (i.e. the data stored on the device) is protected against theft. 
 The patient database (a [CouchDB replicator](https://couchdb.apache.org/)) is unmounted and encrypted using
 [LUKS](https://en.wikipedia.org/wiki/Linux_Unified_Key_Setup) once the user logs out from the device 
 (or it is locked automatically after inactivity). That renders a stolen hard drive unreadable 
-without the knowledge of valid user passwords.  
+without the knowledge of a valid user password.  
 Once a user unlocks the device by entering a valid password, the CouchDB data container is decrypted and mounted to 
 the database process.
 
@@ -115,7 +114,7 @@ landmarks in the 3D model to automatically suggest the circumferences at the app
 All acquired data is replicated (using CouchDB replication) to a cloud-based service platform. In the event of a device failure, no data is lost. Keeping the data online allows the user to proceed with the order on a different end device (for example, a tablet computer). That's up to the preferences of the medical staff and the
 patient.
 
-# The Web Interface And The Data
+## The Web Interface And The Data
 The user management for the device also allows access to a web-based platform. The web interface 
 and the touchscreen of the device share large parts of the code base, so the appearance and operation are 
 the same.  
@@ -129,10 +128,10 @@ The device connects to the administration platform via a point-to-point encrypte
 
 ### Rollout
 Setting up a device at the client's site requires a calibration of the sensors. This is needed due to the 
-production-related deviations of the body frame and sensors. In addition, environmental conditions can be handled. 
+production-related deviations of the body frame and sensors. In addition, environmental conditions can affect the results. 
 Each device gets a serial number that also encodes optional features (for example, the body color), 
 the production date, and a counter. Once the system is calibrated and the initial setup procedure is successfully
-performed (i.e. creating initial users), the device is ready for the patients.
+performed (i.e. creating initial users), the device is ready to scan patients.
 
 ### Monitoring
 An integrated monitoring solution allows tracking the usage of individual devices in the field. It collects anonymized data about the usage of features, reports scans with metadata and other metrics. This data allows for improving the workflow and the overall experience for both the user and the patient.
