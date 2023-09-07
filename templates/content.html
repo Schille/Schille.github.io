@@ -173,6 +173,30 @@
 
 <div class="user-projects">
   <div class="images-left">
+    {% set sw1 = resize_image(path="/img/Hurricane-Logo-GrayText.png", width=800, height=550, op="fill") %}
+    <img alt="A Django Stack for Kubernetes" src="{{ sw1.url }}" />
+  </div>
+  <div class="contents-right">
+    <h3>Hurricane: A Django Stack for Kubernetes</h3>
+    <span class="tag blue">Professional</span>
+    <span class="tag yellow">Medium</span>
+    <ul>
+      <li>App server for the <a href="https://www.djangoproject.com/" target="_blank">Django framework</a></li>
+      <li>Python <a href="https://www.tornadoweb.org/en/stable/" target="_blank">Tornado-based</a></li>
+      <li>Advanced Kubernetes patterns</li>
+    </ul>
+    <p>In 2020, I developed a new app server for the Django framework. It is based on the Tornado web server and 
+      provides advanced features for Kubernetes deployments. This project is open source and available on 
+      <a href="https://github.com/django-hurricane/django-hurricane" target="_blank">GitHub</a>.
+    </p>
+    <a class="project-link" href="https://django-hurricane.io" target="_blank">Check it out</a>
+  </div>
+  <hr>
+</div>
+
+
+<div class="user-projects">
+  <div class="images-right">
     {% set sw1 = resize_image(path="/img/shoppingwindow/sw1.jpg", width=800, height=550, op="fill") %}
     <img alt="A digital shopping window" src="{{ sw1.url }}" />
   </div>
@@ -189,7 +213,7 @@
     <p>In 2015, I worked with my team to create a gesture-controlled digital shopping window that allows users to explore a fictional 
       3D world with product placement and combined smartphone checkout.
     </p>
-    <a class="project-link" href="/projects/shoppingwindow/">Read the story</a>
+    <!-- <a class="project-link" href="/projects/shoppingwindow/">Read the story</a> -->
   </div>
 
 </div>

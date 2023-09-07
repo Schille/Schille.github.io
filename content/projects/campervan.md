@@ -7,8 +7,8 @@ slug = "bob-campervan"
 
 ## Intro
 There is an already long-lasting trend to convert vans (or panel vans) into mobile homes (or recreational vehicles, "RVs"). 
-At first, I thought this is a relatively new thing that got popular with YouTube recently, but once I talked 
-to other people I found that this runs for decades already.  
+At first, I thought this was a relatively new thing that got popular with YouTube recently, but once I talked 
+to other people I found that this has run for decades already.  
 I had this dream for at least 13 years: traveling freely with a motorhome throughout the world, 
 exploring places that I could otherwise never reach and sleeping wherever I like. 
 
@@ -43,14 +43,14 @@ issue on its own later anyway. That's why I looked for a rather lightweight pane
 
 {{ resize_image(path="img/bob/bob1.jpg", width=300, height=200, op="fill", float="right") }} 
 I found this affordable beauty and bought it from a jumble sale trader. The Volkswagen Crafter 
-(shipped in 2017) ticked already many boxes and is almost identical (except for the front and the motor) to 
+(shipped in 2017) ticked many boxes and is almost identical (except for the front and the motor) to 
 the Mercedes-Benz Sprinter. 
 We gave the van the name "Bob".
 {{ resize_image(path="img/bob/bob0.jpg", width=800, height=550, op="fill") }}
 
 ## Interior Planning
-To get inspiration for the creation of the inside, my wife and I watch a good amount of YouTube videos from other conversions 
-and we studied professional interior layouts. After we bought the panel van, we spend a couple of hours capturing the inner dimensions.
+To get inspiration for the creation of the inside, my wife and I watched a good amount of YouTube videos from other conversions 
+and we studied professional interior layouts. After we bought the panel van, we spent a couple of hours capturing the inner dimensions.
 That wasn't easy as there is not a single straight plane in the car. Everything is round and molded, hence very complicated to put 
 on paper.  
 
@@ -58,7 +58,7 @@ on paper.
 I planned the interieur using [TinkerCAD](https://tinkercad.com). With a set of 3D models drawn in this
 CAD ("computer-aided design") tool, I was able to create a (well, not very) precise plan of the inside of the van.  
 {{ resize_image(path="img/bob/bob-tinkercad1.png", width=300, height=200, op="fill", float="right") }} 
-Using a 3D paper prototype of the planned layout, I was able to confirm our assumptions and make the necessary tradeoffs. For example, 
+With a 3D paper prototype of the planned layout, I was able to confirm our assumptions and make the necessary tradeoffs. For example, 
 we wanted to sleep on an almost standard-sized (1.40 m x 2 m) bed. That's why we had to plan a slide-out bed construction to sleep parallel to the walls.
 
 {{ resize_image(path="img/bob/bob-paper.jpg", width=800, height=550, op="fill") }} 
@@ -194,8 +194,8 @@ I mounted two solar panels (~240 Wp combined) and two 140-liter alloy boxes for 
 {{ slider(images=["img/bob/bob_roof1.jpg", "img/bob/bob_roof2.jpg", "img/bob/bob_roof3.jpg", "img/bob/bob_roof4.jpg"], width=800, height=400) }}
 
 ### Onboard Water
-I installed two 75-liter water tanks in the trunk. One holds the fresh drinking water, and the other one
-stores the wastewater. They are installed in the car so that the water does not freeze in winter. There is
+I installed two 75-liter water tanks in the back. One stores the fresh drinking water, and the other one
+keeps the wastewater. They are installed in the car so that the water does not freeze in winter. There is
 a water pump with 2.8 bar pressure which allows convenient water extraction and is fun when showering outdoors.  
 The water reserve is enough for about three days with moderate water usage (normal cooking, cleaning dishes, washing) and even longer with restrictive water consumption. The sensors constantly report the filling levels.
 
