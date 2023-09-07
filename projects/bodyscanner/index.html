@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>Five Seconds to a 3D Body Image</title>
+  <meta name="description" content="">
+
+  <link rel="stylesheet" href="https://schille.github.io/main.css">
+  <link rel="stylesheet" href="//cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css">
+  <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+  <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"/>
+</head>
+
+
+  <body>
+      
+      
+
+
+<div id="particles-js" class="particles-sm-js">
+  <div class="back">
+    <a href="/#projects">
+    <i class="fa fa-arrow-left" aria-hidden="true"></i>
+    Home
+    </a>
+  </div>
+  <div class="header-sm">
+    <span class="site-title stong">Five Seconds to a 3D Body Image</span>
+  </div>
+</div>
+
+<div class="page">
+  <div class="container">
+    <div class="content-page">
+      <h1 id="a-body-scanner-for-medical-compression-stockings">A Body Scanner for Medical Compression Stockings</h1>
+<p><strong>Important:</strong> In this story, I have removed all references to those involved in this project. 
+It is free of sensitive information or classified data.</p>
+<h2 id="intro">Intro</h2>
+<p><a rel="noopener" target="_blank" href="https://en.wikipedia.org/wiki/Compression_stockings">Medical compression stockings</a> help
+(among others) especially with edema, a swelling of the leg due to fluid retention in the tissues
+or defective venous valves after thrombosis. The goal is to improve the return flow of blood to 
+the heart by applying mechanical pressure to the leg veins.</p>
+<p>The natural differences between patients' bodies (some have specialties or additional diseases) require 
+the manufacturers of compression stockings to produce in standard size categories but also
+custom-made-to-measure stockings. But how many measures are required and who can conduct 
+the measurement on a patient's body?</p>
+<h3 id="why">Why?</h3>
+<p>In Germany, most cases of this procedure are done in medical supply stores and pharmacies. It takes 
+more than <a rel="noopener" target="_blank" href="https://www.google.com/search?tbm=isch&amp;q=ma%C3%9Fkarte+kompressionsstr%C3%BCmpfe">30 length and circumference measures</a> 
+to make up a dimension map of the patient's legs. Yet, it is not trivial to 
+determine these measurements by hand, mainly because of the soft nature of the human body's skin.
+In addition, people's leg circumferences vary quite a bit throughout the day (you may not be able to see it, but you can measure it).</p>
+<p>The entire measurement procedure is time-consuming (+1 for automation) and close to the
+body, which can be uncomfortable for both the patient and the medical staff. As is often the case, 
+medical supply stores lack trained personnel to perform the measurements.<br />
+Once the patient's data is collected, the medical staff decides whether 
+the measurements reasonably fall within the intervals of the standard product sizes or whether a
+customized compression stocking must be ordered.</p>
+<p>Fortunately for the patient, there are a variety of products: several vendors, several product lines, 
+colors, special features, and so on (with additional costs). It is not easy to choose the 
+right stockings, which is why medical staff must also advise on product selection. 
+At least twice a year, patients are asked to order new compression stockings as they lose their 
+compression effect after this time.</p>
+<h3 id="requirements">Requirements</h3>
+<p>Here is what my team and I have been asked to create. In addition to the core requirement of capturing the measures of the patient's body, the 3D scanner <strong>should</strong> also meet the following requirements:</p>
+<ul>
+<li>be very fast (under 30 seconds for the data acquisition)</li>
+<li>be accessible by medical staff (often, they are not very affine to tech devices)</li>
+<li>ideally no moving parts and free from barriers (e.g. no high steps)</li>
+<li>compact dimensions, yet representative in the store</li>
+<li>full automation, one-stop-solution from dimensional data to order</li>
+<li>comparable pricing</li>
+</ul>
+<h2 id="feasibility-study-and-prototype">Feasibility Study and Prototype</h2>
+<p>The first project goal was to perform a feasibility study and report the results. We researched
+available sensors, based on <a rel="noopener" target="_blank" href="https://en.wikipedia.org/wiki/Structured_light">structured light</a> and <a rel="noopener" target="_blank" href="https://en.wikipedia.org/wiki/Time_of_flight">ToF (time of flight)</a> technologies. At that time,
+the sensor of Microsoft's Kinect (One) was already broadly available, but it was discontinued in favor of its successor. The general availability of sensors and the price tag were taken into consideration as well, so
+we ended up with sensors from <a rel="noopener" target="_blank" href="https://www.orbbec.com/">Orbbec</a>.</p>
+<p>To build a body scanner with no moving parts, one of the biggest challenges was to align all 6 static sensors to a one-world coordinate system. After reading almost all scientific papers on depth sensor alignment, we developed our own approach based on components of 
+<a rel="noopener" target="_blank" href="https://www.ros.org/">ROS (the Robot Operating System)</a>, mainly the <a rel="noopener" target="_blank" href="https://de.wikipedia.org/wiki/Iterative_Closest_Point_Algorithm">ICP (&quot;Iterative closest point&quot;)</a> algorithm paired with a pre-registered
+calibration.</p>
+<div class="image-slider">
+    
+    
+    <div><img src="https:&#x2F;&#x2F;schille.github.io&#x2F;processed_images&#x2F;bs4.124247d387d2fbb0.jpg" /></div>
+    
+    
+    <div><img src="https:&#x2F;&#x2F;schille.github.io&#x2F;processed_images&#x2F;bs2.106ec33a2b2f21b3.jpg" /></div>
+    
+    
+    <div><img src="https:&#x2F;&#x2F;schille.github.io&#x2F;processed_images&#x2F;bs3.87794173c96def41.jpg" /></div>
+    
+    
+    <div><img src="https:&#x2F;&#x2F;schille.github.io&#x2F;processed_images&#x2F;bs6.2ed02ccf86ec0a84.jpg" /></div>
+    
+    
+    <div><img src="https:&#x2F;&#x2F;schille.github.io&#x2F;processed_images&#x2F;bs5.d1262e92b6fa640a.jpg" /></div>
+    
+    
+    <div><img src="https:&#x2F;&#x2F;schille.github.io&#x2F;processed_images&#x2F;bs7.67b650cabb9fbb28.jpg" /></div>
+    
+</div>
+
+<script type="text/javascript">
+    window.addEventListener("DOMContentLoaded", (event) => {
+        $('.image-slider').not('.slick-initialized').slick({
+            dots: true,
+            infinite: false,
+            arrows: true,
+            slidesToShow: 1,
+            centerMode: true,
+            variableWidth: true,
+            adaptiveHeight: false
+        });
+    });
+
+</script>
+<p>A serial capturing of all involved sensors allowed us to create a 3D image of the patient in under 5 seconds
+(without the post-processing of the raw data). Finally, the collected data from the body scanner 
+prototype was compared with the values from two manual measurements (of the very same person). The results
+were promising and within the specified maximum deviations, so we were given the green light for product development.</p>
+<img src="/img/bodyscanner/rotating_body.gif" style="margin: auto; display: block;" alt="A rotating body with detected measures" >
+<br/> A 3D avatar of the patient with the relevant circumferences.
+<h2 id="the-device">The Device</h2>
+<p>For the development of the device, we collaborated with a professional industrial designer and a manufacturer based in Germany.</p>
+<p>We provided the sensor locations, the layout and the specifications for the required infrastructure as input (mainly, the wiring, touch monitor, compute unit and connectors). I managed the process to
+agree on the device's design and checked in regularly with other project goals (i.e. budgets and timeline).</p>
+<h3 id="the-body">The Body</h3>
+<p>The device's body is made from high-quality materials, mostly derivates of medium-density fibreboard. There is
+a pane of glass for the patient to stand on during the scan.<br />
+The design is very sleek and clean like most medical devices are. Nevertheless, the body shell integrates some little helpers (for example, paper clips for the prescription, and drawers) to support the user's workflow.</p>
+<div class="image-slider">
+    
+    
+    <div><img src="https:&#x2F;&#x2F;schille.github.io&#x2F;processed_images&#x2F;bs8.2ad60e0fc6a1224a.jpg" /></div>
+    
+    
+    <div><img src="https:&#x2F;&#x2F;schille.github.io&#x2F;processed_images&#x2F;bs9.373ba519268451f3.jpg" /></div>
+    
+    
+    <div><img src="https:&#x2F;&#x2F;schille.github.io&#x2F;processed_images&#x2F;bs10.1e288493f8c3fa59.jpg" /></div>
+    
+    
+    <div><img src="https:&#x2F;&#x2F;schille.github.io&#x2F;processed_images&#x2F;bs11.19ff747987fdb2d1.jpg" /></div>
+    
+    
+    <div><img src="https:&#x2F;&#x2F;schille.github.io&#x2F;processed_images&#x2F;bs12.bd0c19f9c4017c2a.jpg" /></div>
+    
+</div>
+
+<script type="text/javascript">
+    window.addEventListener("DOMContentLoaded", (event) => {
+        $('.image-slider').not('.slick-initialized').slick({
+            dots: true,
+            infinite: false,
+            arrows: true,
+            slidesToShow: 1,
+            centerMode: true,
+            variableWidth: true,
+            adaptiveHeight: false
+        });
+    });
+
+</script><h3 id="the-touch-user-interface">The Touch User-Interface</h3>
+<p>With the help of professional user-experience design, we created a touch-based user interface and workflow 
+on a large touchscreen. The process starts with the login screen and a personal password to 
+unlock the device. 
+There is a card reader to feed in the patient's data from its German health card. A touch on the &quot;Scan&quot; button
+runs the body scan. After <em>five seconds</em> the scan is done and the patient can dress again.</p>
+<p>After reviewing the scan results (the user can make manual adjustments to the automatically determined values), 
+the medical staff can
+proceed with the product selection and further customization - directly on the device. Finally, the order can be placed on behalf of the patient directly at the manufacturer.</p>
+
+<img src="https:&#x2F;&#x2F;schille.github.io&#x2F;processed_images&#x2F;bs_scan.32270429c97cae4b.jpg" class="";/>
+<p>There are plenty of smart additional functions on the device, for example, a patient's track record, patient search, a news page, device settings and more.</p>
+<p>The device's UI is realized with <a rel="noopener" target="_blank" href="https://www.electronjs.org/">Electron</a>, Web-technologies and Chromium in Kiosk-mode.</p>
+<h3 id="data-at-rest-protection">Data-at-Rest Protection</h3>
+<p>The device ensures that all data-at-rest (i.e. the data stored on the device) is protected against theft. 
+The patient database (a <a rel="noopener" target="_blank" href="https://couchdb.apache.org/">CouchDB replicator</a>) is unmounted and encrypted using
+<a rel="noopener" target="_blank" href="https://en.wikipedia.org/wiki/Linux_Unified_Key_Setup">LUKS</a> once the user logs out from the device 
+(or it is locked automatically after inactivity). That renders a stolen hard drive unreadable 
+without the knowledge of a valid user password.<br />
+Once a user unlocks the device by entering a valid password, the CouchDB data container is decrypted and mounted to 
+the database process.</p>
+<h3 id="data-processing-pipeline">Data Processing Pipeline</h3>
+<p>The acquired depth data is processed directly on the device (&quot;edge computing&quot;). We created a flexible pipeline
+framework and a data container format for the scans. The pipeline not only smoothens the data but also detects
+landmarks in the 3D model to automatically suggest the circumferences at the appropriate length. Our proprietary data processing framework was designed to be portable and upgradeable with existing data containers so we can troubleshoot issues after the scan has already been performed.
+All acquired data is replicated (using CouchDB replication) to a cloud-based service platform. In the event of a device failure, no data is lost. Keeping the data online allows the user to proceed with the order on a different end device (for example, a tablet computer). That's up to the preferences of the medical staff and the
+patient.</p>
+<h2 id="the-web-interface-and-the-data">The Web Interface And The Data</h2>
+<p>The user management for the device also allows access to a web-based platform. The web interface 
+and the touchscreen of the device share large parts of the code base, so the appearance and operation are 
+the same.<br />
+Since the local data of the body scanner gets replicated (including deletions) into an online database, the web interface can also grant access to the patient's record. That supports more sophisticated workflows of a shared body scanner or an even more convenient consultation about the final product.</p>
+<h2 id="fleet-management-and-customer-support">Fleet Management And Customer Support</h2>
+<p>The device management and online platform comes with a fleet management application for administration. It
+incorporates device health monitoring and usage reporting. For the first level of support, device users can share their patient records (most importantly the scans) and even request on-screen support (via screen sharing).
+The device connects to the administration platform via a point-to-point encrypted 
+<a rel="noopener" target="_blank" href="https://en.wikipedia.org/wiki/Virtual_private_network">virtual private network</a>.</p>
+<h3 id="rollout">Rollout</h3>
+<p>Setting up a device at the client's site requires a calibration of the sensors. This is needed due to the 
+production-related deviations of the body frame and sensors. In addition, environmental conditions can affect the results. 
+Each device gets a serial number that also encodes optional features (for example, the body color), 
+the production date, and a counter. Once the system is calibrated and the initial setup procedure is successfully
+performed (i.e. creating initial users), the device is ready to scan patients.</p>
+<h3 id="monitoring">Monitoring</h3>
+<p>An integrated monitoring solution allows tracking the usage of individual devices in the field. It collects anonymized data about the usage of features, reports scans with metadata and other metrics. This data allows for improving the workflow and the overall experience for both the user and the patient.</p>
+
+    </div>
+</div>
+</div>
+<script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+<script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+
+
+      
+<footer class="footer">
+  <div class="back">
+    <a href="/">
+    <i class="fa fa-arrow-left" aria-hidden="true"></i>
+    Home
+    </a>
+  </div>
+    <p>&copy; Michael Schilonka</p>
+    <p>Ported to Zola with <span class="love">❤</span> by <a href="https://github.com/svavs">Silvano Sallese</a> (original by <a href="https://github.com/nrandecker">Nathan Randecker</a>)</p>
+</footer>
+<script src="//cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+<script src="https://schille.github.io/js/sweet-scroll.min.js"></script>
+<script src="https://schille.github.io/js/main.js"></script>
+
+      
+<!-- Google Analytics -->
+
+<script>
+  var dnt = navigator.doNotTrack || window.doNotTrack || navigator.msDoNotTrack;
+  if (dnt != "1" && dnt != "yes") {
+    (function (i, s, o, g, r, a, m) {
+      i['GoogleAnalyticsObject'] = r; i[r] = i[r] || function () {
+        (i[r].q = i[r].q || []).push(arguments)
+      }, i[r].l = 1 * new Date(); a = s.createElement(o),
+        m = s.getElementsByTagName(o)[0]; a.async = 1; a.src = g; m.parentNode.insertBefore(a, m)
+    })(window, document, 'script', 'https://www.google-analytics.com/analytics.js', 'ga');
+    ga('create', '', 'auto');
+    ga('send', 'pageview');
+  }
+</script>
+
+
+  </body>

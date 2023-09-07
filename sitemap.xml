@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+    <url>
+        <loc>https://schille.github.io/</loc>
+    </url>
+    <url>
+        <loc>https://schille.github.io/hello/</loc>
+    </url>
+    <url>
+        <loc>https://schille.github.io/projects/bob-campervan/</loc>
+    </url>
+    <url>
+        <loc>https://schille.github.io/projects/bodyscanner/</loc>
+    </url>
+    <url>
+        <loc>https://schille.github.io/projects/bottleglow/</loc>
+    </url>
+    <url>
+        <loc>https://schille.github.io/projects/shoppingwindow/</loc>
+    </url>
+</urlset>
